@@ -1,0 +1,30 @@
+{
+  "client_pitch": "Sourire Clinic Casablanca",
+  "differentiator": "Hero 3D interactif réactif au curseur + simulation blanchiment",
+  "color_palette": {
+    "clinic_white": "#FAFAFA",
+    "mint_teal": "#0D9488",
+    "soft_navy": "#1E3A5F",
+    "light_coral": "#FF8C7A"
+  },
+  "spline_settings": {
+    "camera_fov": 42,
+    "camera_position": [0, 0.2, 8.5],
+    "material": "Physical Glossy Enamel",
+    "clearcoat": 1.0,
+    "roughness": 0.14,
+    "transmission": 0.12,
+    "interaction": "Mouse Look + Drag Orbit 360",
+    "fps_target": 60
+  },
+  "reusable_niches": [
+    {
+      "niche": "Dentaire (Dental Masters, cabinets privés)",
+      "asset": "Molaire stylisée / Aligneur transparent 3D / Sourire minimaliste"
+    },
+    {
+      "niche": "Food / Glovo (Restaurant premium Casablanca)",
+      "asset": "Plat signature / Burger gourmet / Pâtisserie fine en rotation 3D"
+    }
+  ]
+}

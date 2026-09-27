@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        background-color: #FAFAFA;
+        color: #1E3A5F;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+}
+
+/* Effets Awwwards pour le Hero 3D et le Cabinet */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.glass-panel-dark {
+    background: rgba(30, 58, 95, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-tag {
+    background: rgba(13, 148, 136, 0.08);
+    border: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+/* Lignes de scan laser 3D façon scanner intra-oral iTero / Trios */
+.scan-line {
+    background: linear-gradient(180deg, transparent 0%, rgba(13, 148, 136, 0.45) 50%, transparent 100%);
+    animation: scannerMotion 3.5s ease-in-out infinite;
+}
+
+@keyframes scannerMotion {
+    0% { top: 0%; opacity: 0.1; }
+    50% { top: 85%; opacity: 0.85; }
+    100% { top: 0%; opacity: 0.1; }
+}
+
+/* Grille subtile d'ingénierie médicale */
+.bg-grid-medical {
+    background-size: 32px 32px;
+    background-image: 
+        linear-gradient(to right, rgba(13, 148, 136, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(13, 148, 136, 0.04) 1px, transparent 1px);
+}
+
+/* Effet halo d'émail nacré */
+.enamel-radial-glow {
+    background: radial-gradient(circle at center, rgba(13, 148, 136, 0.15) 0%, rgba(250, 250, 250, 0) 70%);
+}
+
+/* Mode Démo Badge Pulsation */
+.badge-ping-dot {
+    position: relative;
+}
+.badge-ping-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: #0D9488;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    opacity: 0.6;
+}
